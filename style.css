@@ -1,0 +1,22 @@
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .hero-bg {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+}
